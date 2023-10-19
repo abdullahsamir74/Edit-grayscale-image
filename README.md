@@ -1,1 +1,1 @@
-# Edit-grayscale-image
+# Edit-grayscale-image (.bmp)
