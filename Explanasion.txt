@@ -1,0 +1,52 @@
+(1) Black and white:
+    we check if the pixel are over 127 or not. if it is we make it whit ,else we make it black
+
+(2) invert image:
+    we sbtract 255 from each pixel to convert the degree of it.
+
+(3) merge image:
+    We make nested for loop to store in image 3 the avarge of image1 and image2.
+
+(4) Flip image:
+    we show two options vertical and horizontal . if user choose vertical we loop all over image pixels and make all new values of row=the
+    opposite row to it in this formula abs(255-i) . And if user choose horizontal we do the same thing but with columns.
+
+(5) Rotate image:
+    we show three options to user 90,180,270. If user choose 90 all we do is swap each row and column then swape each new row with the
+     opposite one. And for 180 and 270 we can make the same operation twice if he chooses 180 and three times if 270.
+
+(6) Darken and lighten:
+     We make if condition with  darken or lighten if darken We're subtract the image divided by 2 from the original Image,if lighten then
+      added the image divided by 2 from the original Image.
+
+(7) Detect image Edges:
+    we loop all over indexes and if we find a big difference in values of indexes these are beside each other we consider it an edge.
+
+(8) Enlarge image:
+    the user will choose quarter that he want and we will make a new 2d array to store wich quarter he will choose and load it into 2d array.After that all we do is copy this 2D array to the  
+    our image But evey index in 2D array equivalent to 4 indexes (rows and columns together) that is it.
+
+(9) Shrink image:
+    Each pixel value at location (i, j) is copied to the location Example (i/2, j/2) in the downscaled image. Then, the pixel values in the right half and bottom half of the downscaled image 
+    are set to 255, representing the color white.
+
+(a) Mirror image:
+    user will choose option from 4 options. If user choose 1 or 2 we loop in just this limit (colums:0->128 OR columns: 128 ->255 And rows will be 0 -> 255)
+    and all difference will be in columns and make each one of them like the opposite one.
+    If user choose 3 or 4 , here we do the same operation like above but to rows not columns.
+
+(b) Shuffle image:
+    First thing we store each quarter in a separate 2D array to be ready just for copying them.
+    Then we make if conditions to each position  the user will choose and all our change will be in what we will loop on and where this quarter will be copied in the original image.
+
+(c) Blur:
+     We will bring a pixel, then add each pixel at the top, bottom, right, and left, and divide their sum by 9.
+
+(d) crop:
+     I will loop just on the user input and anything else i will make it white.
+
+(e) Skew:
+   This process is to smooth the image or reduce noise by replacing the pixel values by their average with the surrounding pixels.
+ 
+
+
