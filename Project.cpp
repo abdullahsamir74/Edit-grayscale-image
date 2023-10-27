@@ -99,7 +99,7 @@ void Flip_Image()                 // Filter (4)
       {
         for(int j=0;j<SIZE;j++)
         {
-            image[i][j]=standard[abs(i-255)][j];     // like swapping with its opposite one
+            image[i][j]=standard[255-i][j];     // like swapping with its opposite one
         }
       }
     }
@@ -109,7 +109,7 @@ void Flip_Image()                 // Filter (4)
         {
             for(int j=0;j<SIZE;j++)
             {
-                image[i][j]=standard[i][abs(j-255)];    // same thing like above but the difference is only the side
+                image[i][j]=standard[i][255-j];    // same thing like above but the difference is only the side
             }
         }
     }
@@ -131,7 +131,7 @@ void Rotate_Image()                     // Filter (5)
         {
             for (int j=0;j<SIZE;j++)
             {
-                image[i][j]=standard[abs(255-j)][i];       // swap each row and column then swape each new row with the opposite one
+                image[i][j]=standard[255-j][i];       // swap each row and column then swape each new row with the opposite one
             }
         }
     }
@@ -141,7 +141,7 @@ void Rotate_Image()                     // Filter (5)
         {
             for (int j=0;j<SIZE;j++)
             {
-                image[i][j]=standard[abs(255-i)][abs(255-j)];      // swape each row & column with the opposite one
+                image[i][j]=standard[255-i][255-j];      // swape each row & column with the opposite one
             }
         }
     }
@@ -151,8 +151,8 @@ void Rotate_Image()                     // Filter (5)
         {
             for (int j=0;j<SIZE;j++)
             {
-              image[i][j]=standard[abs(255-j)][abs(255-i)];      //180
-              image[i][j]=standard[j][abs(255-i)];              // 90 :(180 +90 =270):   make both above algorithms will lead to 270 degrees
+              image[i][j]=standard[255-j][255-i];      //180
+              image[i][j]=standard[j][255-i];          // 90 :(180 +90 =270):   make both above algorithms will lead to 270 degrees
             }
         }
     }
