@@ -818,7 +818,7 @@ void menu()                              // Display available options to a user
 {
     cout<<"Please select a filter to apply or 0 to exit:\n";
     cout<<"1-Black &White Filter\n2-Invert Filter\n3-Merge Filter\n4-Flip Image\n5-Rotate Image\n6-Darken and Lighten Image\n7-Detect Image Edges\n8-Enlarge Image\n9-Shrink Image\n";
-    cout<<"10-Mirror 1/2 Image\n11-Shuffle Image\n12-Blur Image\n13-Crop Image\n14-Skew Image Right\n15-Skew Image UP\n16-Save the Image to a file\n0-exit\n";
+    cout<<"10-Mirror 1/2 Image\n11-Shuffle Image\n12-Blur Image\n13-Crop Image\n14-Skew Image Right\n16-Save the Image to a file\n0-exit\n";
     doSomething();
 }
 void saveImage()            // save changes
