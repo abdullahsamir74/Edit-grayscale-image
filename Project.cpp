@@ -1,11 +1,6 @@
 /*
-FCAI – OOP Programming – 2023 - Assignment 1
-Course Instructors:Dr. Mohammad El-Ramly
 Program Name:Gray Scale Image Processor
-Last Modification Date: 10/6/2023
 Author1 and ID and Group: Abdullah Samir Mohamed 20220200  abdullahsamir2274@gmail.com
-Author2 and ID and Group: Mohamed Ahmed Mohamed  20210596  mohamed.5580.558@gmail.com
-Author3 and ID and Group: ibrahim rabea ibrahim  20221001  ibra7imsalman30@gmail.com
 */
 #include<bits/stdc++.h>
 #include "bmplib.cpp"
